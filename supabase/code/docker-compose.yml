@@ -140,7 +140,9 @@ services:
       GOTRUE_EXTERNAL_PHONE_ENABLED: ${ENABLE_PHONE_SIGNUP}
       GOTRUE_SMS_AUTOCONFIRM: ${ENABLE_PHONE_AUTOCONFIRM}
 
+      GOTRUE_HOOK_SEND_EMAIL_ENABLED: "true"
       GOTRUE_HOOK_SEND_EMAIL_URI: "https://ngrok.doerkit.dev/webhook_supabase/hooks"
+      GOTRUE_HOOK_SEND_EMAIL_SECRETS: "your-secret-key"
     
       # Uncomment to enable custom access token hook. Please see: https://supabase.com/docs/guides/auth/auth-hooks for full list of hooks and additional details about custom_access_token_hook
 
